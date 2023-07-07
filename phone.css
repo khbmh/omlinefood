@@ -1,0 +1,231 @@
+/* css reset */
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: serif;
+}
+
+/* body{
+    background-color: black;
+} */
+
+
+/* CSS variables */
+:root{
+    --navbar-height: 59px;
+}
+
+
+/* Navigation Bar */
+#navbar{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: sticky;
+    top: 0px;
+}
+
+/* Navigation Bar: logo and image */
+#logo{
+margin: 5px 10px;
+}
+#logo img{
+    height: 50px;
+margin: 10px 2px;
+}
+
+
+/* Navigation Bar: List Item */
+#navbar ul{
+    display: flex;
+}
+#navbar::before{
+    content: " ";
+    background-color: rgb(171, 179, 149);
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.7;
+}
+#navbar ul li{
+    font-weight: 600;
+    list-style: none;
+    font-size: 1.1rem;
+}
+#navbar ul li a{
+    font-family: 'Oswald', sans-serif;
+    color: white;
+    margin-top: 10px;
+    display: block;
+    padding: 3px 22px;
+    border-radius: 8px;
+    text-decoration: none;
+}
+#navbar ul li a:hover{
+    color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
+}
+
+
+
+/* HOME section */
+#home{
+    display: flex;
+    flex-direction: column;
+    padding: 10px 11px;
+    height: 550px;
+    justify-content: center;
+    align-items: center;
+
+}
+#home::before{
+    content: " ";
+    background: url('img/bgp.jpg') no-repeat center center/cover;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.3;
+}
+#home h1{
+    font-family: 'Oswald', sans-serif;
+    color: rgb(0, 0, 0);
+    text-align: center;
+}
+
+/* Services Section */
+.services{
+    margin-top: 170px;
+}
+#services{
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+
+}
+#services .box{
+    border: 2px solid black;
+    margin: 13px 10px;
+    padding: 15px 5px;
+    border-radius: 11px;
+    background-color: rgba(237, 238, 228, 0.355);
+}
+#services .box img{
+    height: 70px;
+    margin: auto;
+    display: block;
+
+}
+
+/* Clients Section */
+
+#clients img{
+    height: 66px;
+    padding: 1px;
+}
+
+#client-section::before{
+    content: " ";
+    background: url('img/bg3.jpg') no-repeat center center/cover;
+    position: absolute;
+    height: 32%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.3;
+}
+#clients{
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+
+
+
+/* Contact section  */
+#contact{
+position: relative;
+}
+#contact::before{
+    content: " ";
+    background: url('img/cu2.jpg') no-repeat center center/cover;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.3;
+}
+#contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 24px;
+}
+#contact-box input,
+#contact-box textarea{
+    width: 100%;
+    padding: 0.3rem;
+    border-radius: 6px;
+}
+#contact-box form{
+    width: 70%;
+}
+#contact-box label{
+    font-family: 'Oswald', sans-serif;
+    font-size: 1rem;
+}
+
+footer{
+    /* font-family: 'Oswald', sans-serif; */
+    background-color: rgba(0, 0, 0, 0.66);
+    color: white;
+    padding: 6px 60px;
+    font-size: 0.7rem;
+}
+
+
+
+
+
+
+/* utility section */
+
+#home p{
+    color: rgb(0, 0, 0);
+    text-align: center;
+}
+.h-primary{
+    font-family: 'Oswald', sans-serif;
+    font-size: 2.8rem;
+    padding: 12px;
+}
+.h-secondary{
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.8rem;
+    padding: 12px;
+}
+
+.btn{
+    /* font-family: 'Oswald', sans-serif; */
+    padding: 5px 15px;
+    border: 2px solid black;
+    background-color: rgb(192, 174, 174);
+    color: rgb(0, 0, 0);
+    margin: 24px;
+    font-size: 1.2rem;
+    border-radius: 8px;
+    cursor: pointer;
+}
+.btn:hover{
+    /* background-color: rgb(217, 210, 204); */
+    border-radius: 25px;
+}
+
+.center{
+    text-align: center;
+}
+
+
+
+
+
